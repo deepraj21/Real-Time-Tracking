@@ -23,16 +23,18 @@
             height: 100%;
         }
 
-         #heading {
-            width: 100%;
+        #heading {
             text-align: center;
             position: fixed;
             top: 0;
-            left: 0;
-            background-color: rgba(255, 255, 255, 0);
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.842);
             color: black;
             z-index: 1000;
             padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
 
         #map {
@@ -45,7 +47,7 @@
 </head>
 
 <body>
-    <h1 id="heading">Tracking App</h1>
+    <h3 id="heading">Tracking App</h3>
     <div id="map"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet-src.min.js"
         integrity="sha512-3/WyQrhTdqSVmSifQS62akgtNBhZha2lS44TnoN9Jk3J01FvsKK4suVmz6t5FtccGb5iJw58GoFhBjPE5EPc8Q=="
